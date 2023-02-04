@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --color1:rgba(24, 24, 24);
+    --color2:#E2D2B7;    
+    --color3:#FBF9F0;
+    --color4:#91662d; /*HOVER*/
+    --color5:rgb(48, 48, 48);  /*HOVER*/
+
+    --font1:Arial, Helvetica, sans-serif;
+    --font2:'Poppins', Arial, sans-serif;
+}
+
+*{
+    font-family: var(--font1);
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    display: block;
+    padding: .4rem;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+a:hover{
+    color: var(--color4);
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.select-menu{
+    box-sizing: border-box;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color2);
+}
+
+.options{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+.options a{
+    display: block;
+    padding: .4rem;
+}
+
+.options a:after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color4);
+    bottom: 0;
+    left: 0;
+    transition: all .5s;
+}
+
+.options a:hover:after{
+    width: 100%;
+}
+
+.btn-mobile{
+    display: none;
+}
