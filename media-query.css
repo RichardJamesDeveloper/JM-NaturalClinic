@@ -80,4 +80,36 @@
         transform: rotate(-135deg);
         top: -7px;
     }
+
+    /*BIOGRAFIA*/
+    .biografia h1{
+        background-color: var(--color3);
+        height: 100vh;  
+        padding-top: 30px;
+        padding-top: 60px;
+    }
+
+    /*PROCEDIMENTOS*/
+    .procedimentos h1{
+        background-color: var(--color0);
+        height: 100vh;  
+        padding-top: 30px;
+        padding-top: 60px;
+    }
+
+    /*PORTFÓLIO*/
+    .portfolio h1{
+        background-color: var(--color3);
+        height: 100vh;  
+        padding-top: 30px;
+        padding-top: 60px;
+    }
+
+    /*AGENDAMENTOS*/
+    .agendamentos h1{
+        background-color: var(--color0);
+        height: 100vh;  
+        padding-top: 30px;
+        padding-top: 60px;
+    }
 }

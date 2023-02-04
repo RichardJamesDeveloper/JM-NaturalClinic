@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
 :root{
+    --color0:rgba(255,255,255);
     --color1:rgba(24, 24, 24);
     --color2:#E2D2B7;    
     --color3:#FBF9F0;
@@ -18,10 +19,11 @@
     padding: 0px;
 }
 
+/*HEADER*/
 a{
     display: block;
     padding: .4rem;
-    color: white;
+    color: var(--color0);
     text-decoration: none;
     position: relative;
 }
@@ -30,13 +32,21 @@ a:hover{
     color: var(--color4);
 }
 
-.logo{
+a.logo{
     font-size: 1.5rem;
     font-weight: bold;
+    color: var(--color4);
+    text-decoration: none;
+}
+
+.sb{
+    color: var(--color0);
 }
 
 .select-menu{
+    position: fixed;    
     box-sizing: border-box;
+    width: 100vw;
     height: 60px;
     padding: 1rem;
     display: flex;
@@ -73,4 +83,36 @@ a:hover{
 
 .btn-mobile{
     display: none;
+}
+
+/*BIOGRAFIA*/
+.biografia h1{
+    background-color: var(--color3);
+    height: 100vh;  
+    padding-top: 30px;
+    padding-top: 60px;
+}
+
+/*PROCEDIMENTOS*/
+.procedimentos h1{
+    background-color: var(--color0);
+    height: 100vh;  
+    padding-top: 30px;
+    padding-top: 60px;
+}
+
+/*PORTFÓLIO*/
+.portfolio h1{
+    background-color: var(--color3);
+    height: 100vh;  
+    padding-top: 30px;
+    padding-top: 60px;
+}
+
+/*AGENDAMENTOS*/
+.agendamentos h1{
+    background-color: var(--color0);
+    height: 100vh;  
+    padding-top: 30px;
+    padding-top: 60px;
 }
